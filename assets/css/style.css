@@ -6,8 +6,7 @@ body{
   font-family: 'Mulish', sans-serif;
   position: relative;
 }
-
-/* ! HEADER ALL PAGES */
+/*HEADER*/
 nav{
   position: relative;
   width: 100%;
@@ -16,35 +15,18 @@ nav{
 header{
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.438);
   line-height: 10px;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; */
 }
-
-
-
 header h1{
   padding: 30px 30px 0;
   /* margin-top: 18px; */
   text-transform: capitalize;
   font-size: 30px;
   letter-spacing: 3px;
-  /* display: none; */
 }
-
 .list-links{
-  /* display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  width: 300px; */
-  /* padding: 30px; */
   display: none;
 }
-
 .fa{
-  /* position: absolute; */
   padding: 30px;
   cursor: pointer;
   transition: 0.5s linear;
@@ -53,8 +35,7 @@ header h1{
 .fa-transform{
   transform: rotate(90deg); 
 }
-
-/* ! MAIN HOME */
+/*MAIN*/
 .main-home{
   margin-bottom: 50px;
   background-image:url(/assets/images/tobias-tullius-PXXtq6bp6cs-unsplash.jpg);
@@ -68,11 +49,11 @@ header h1{
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 10px;
+  padding-bottom: 50px;
 }
 .description-info{
   padding: 20px;
   text-transform: capitalize;
-  /* width: 375px; */
   text-align: left;
   line-height: 40px;
   margin: 0 auto;
@@ -80,8 +61,6 @@ header h1{
 }
 .description-info p{
   padding: 10px 0;
-  /* color: rgb(99, 100, 102);*/
-  /* opacity: 0.8; */
   letter-spacing: 3px;
 }
 .description-info h3{
@@ -103,7 +82,6 @@ header h1{
   -moz-box-shadow: 10px 11px 35px -15px rgba(89,80,89,1);
   box-shadow: 10px 11px 35px -15px rgba(89,80,89,1);
 }
-
 /* ! MAIN ABOUT */
 .main-about h1{
   text-align: center;
@@ -124,10 +102,6 @@ header h1{
   text-align: center;
   line-height: 35px;
 }
-
-
-
-
 .container-about{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -135,11 +109,6 @@ header h1{
   grid-column-gap: 0px;
   grid-row-gap: 20px;
   padding: 30px;
-  /* border: 1px solid black; */
-
-}
-.container-about article{
-  /* border: 1px solid black; */
 }
 .container-about h1{
   text-align: left;
@@ -148,7 +117,6 @@ header h1{
   padding: 10px;
   margin-bottom: 20px;
 }
-/* ------------------------In loc de p poate fac o lista----------------------------------------- */
 .about-list{
   list-style-type: disc;
   margin-left: 50px;
@@ -160,10 +128,7 @@ header h1{
   text-align: left;
   line-height: 30px;
 }
-
-
 /* ! MAIN CONTAT */
-
 .main-contact h1{
   text-align: center;
   font-size: 30px;
@@ -176,12 +141,10 @@ header h1{
   background-position: center;
   background-size: cover;
 }
-
 .contact-section article{
   display: flex;
   line-height: 30px;
 }
-
 .contact-section h4{
   padding: 0 10px;
   margin-left: 30px;
@@ -191,8 +154,6 @@ header h1{
   margin-left: 30px;
   padding: 0 10px;
 }
-
-
 .contact-section{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -204,7 +165,6 @@ header h1{
 .address{
   margin-bottom: 50px;
 }
-
 /* ! PROJECTS */
 .main-project{
   background-image: url(/assets/images/saffu-UEgo43quyCw-unsplash.jpg);
@@ -254,24 +214,19 @@ header h1{
 .project-item:last-child{
   margin-top: -100px;
 }
-
 /* ! FOOTER */
 footer{
   width: 100%;
   height: 75px;
   color: white;
   margin-top: -50px;
-  /* border: 1px solid black; */
   background-color: black;
-  /* background: rgb(255,255,255); */
-  /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); */
 }
 footer h3{
   text-align: center;
   text-transform: capitalize;
   line-height: 75px;
 }
-
 .map{
   width: 100%;
   height: 300px;
@@ -281,7 +236,6 @@ footer h3{
   margin-top: 20px;
   display: none;
 }
-
 .toggle{
   display: none;
   text-align: center;
@@ -313,7 +267,6 @@ footer h3{
     border-top:1px solid rgb(211, 209, 209) ;
     display: none;
     background-color: rgba(204, 200, 200, 0.226);
-    /* background-color: blueviolet; */
   }
   .list-item{
     padding: 50px;
@@ -329,14 +282,6 @@ footer h3{
     text-align: center;
   }
 }
-
-@media screen and (min-width: 768px) {
-  /* .description-info{
-    padding-left: 150px;
-  } */
-}
-
-
 @media screen and (min-width: 992px) {
   .projects{
     display: grid;
