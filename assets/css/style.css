@@ -205,7 +205,55 @@ header h1{
   margin-bottom: 50px;
 }
 
-
+/* ! PROJECTS */
+.main-project{
+  background-image: url(/assets/images/saffu-UEgo43quyCw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.projects{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+}
+.project-item{
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+}
+.project-item h1{
+  text-align: center;
+  padding: 20px;
+}
+.source{
+  text-align: center;
+  margin-top: 15px;
+}
+.project-item a{
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: gray;
+  color: white;
+}
+.projects img{
+  width: 330px;
+  height: 180px;
+}
+.project-item:first-child{
+  margin-top: 100px;
+}
+.project-item:last-child{
+  margin-top: -100px;
+}
 
 /* ! FOOTER */
 footer{
@@ -290,6 +338,30 @@ footer h3{
 
 
 @media screen and (min-width: 992px) {
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+  }
+  .projects img{
+    width: 310px;
+
+  }
+  .project-item{
+    margin-bottom: 200px;
+    margin-top: 100px;
+  }
+  .project-item:last-child{
+    margin-top: 100px;
+  }
+  .project-item:hover{
+    transition: 1.5s linear;
+    transform: rotateY(360deg);
+  }
   .map{
     display: block;
   }
@@ -317,7 +389,7 @@ footer h3{
     display: block;
     display: flex;
     justify-content: space-between;
-    width: 400px; 
+    width: 550px; 
     padding: 30px;
     margin-right: 50px;
   }
